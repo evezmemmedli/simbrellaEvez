@@ -1,0 +1,180 @@
+body {
+  height: 200vh; }
+
+a {
+  text-decoration: none; }
+
+html {
+  scroll-behavior: smooth; }
+
+.black-menu-text a {
+  color: black !important; }
+
+header {
+  background: transparent;
+  height: 80px;
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%; }
+  header .header-navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; }
+    header .header-navbar .logo2 {
+      display: none; }
+    header .header-navbar ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      list-style: none; }
+      header .header-navbar ul li {
+        padding: 0 15px; }
+      header .header-navbar ul a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        font-size: 17px;
+        transition: 0.3s all; }
+      header .header-navbar ul a:hover {
+        color: orange; }
+  header .menu-bar {
+    color: white;
+    font-size: 24px; }
+
+.main-wrapper {
+  background-image: url(https://www.simbrella.com/site/assets/files/1040/cover.jpg);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .main-wrapper::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    display: block;
+    position: absolute; }
+  .main-wrapper .mine-scroll-area {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    color: white; }
+  .main-wrapper .mine-scroll-span:before {
+    content: "";
+    background-image: url(https://www.simbrella.com/site/templates/img/mouse_icon.svg);
+    width: 25px;
+    height: 35px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); }
+  .main-wrapper span.mine-scroll-span {
+    position: relative;
+    padding-left: 40px;
+    display: block; }
+  .main-wrapper .my-wrapper-container {
+    color: white;
+    position: relative; }
+    .main-wrapper .my-wrapper-container .title-box {
+      width: 600px;
+      max-width: 100%; }
+      .main-wrapper .my-wrapper-container .title-box h1 {
+        font-weight: 600;
+        font-size: 50px; }
+
+.secret-menu-sections {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0%;
+  overflow: hidden;
+  transition: 0.7s all;
+  background: #2d3192;
+  z-index: 3; }
+  .secret-menu-sections .sm-header {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: 600; }
+  .secret-menu-sections ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 15px; }
+    .secret-menu-sections ul li {
+      border-bottom: 1px solid white;
+      padding: 10px; }
+      .secret-menu-sections ul li a {
+        color: white;
+        text-decoration: none; }
+
+.active-mobile-menu {
+  height: 100%; }
+
+@media (max-width: 1050px) {
+  .site-navigation {
+    display: none; } }
+
+@media (min-width: 1051px) {
+  .menu-bar {
+    display: none; }
+  .secret-menu-sections {
+    display: none !important; } }
+
+@media (max-width: 767px) {
+  .main-wrapper {
+    height: 500px; } }
+
+@media (max-width: 1200px) {
+  .header-navbar ul li {
+    padding: 0px; }
+    .header-navbar ul li a {
+      padding: 0px; } }
+
+.cards-about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0; }
+  .cards-about .card-title {
+    color: #2d3192;
+    font-size: 36px;
+    font-weight: bolder; }
+  .cards-about a {
+    border: 3px solid gray;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: black; }
+    .cards-about a .fa-solid {
+      margin-left: 40px;
+      color: orange; }
+
+.cards {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 60px 40px;
+  transition: 0.5s all; }
+  .cards .cards-body h4 {
+    margin: 15px 0; }
+  .cards:hover {
+    transform: scale(1.05); }
